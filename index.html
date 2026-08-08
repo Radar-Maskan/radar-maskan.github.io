@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رادار هوشمند مسکن پردیس | شکار فرصت‌های طلایی</title>
+    
+    <!-- 🎯 تگ‌های سئو برای دیده شدن در گوگل -->
+    <meta name="description" content="رادار هوشمند مسکن پردیس: سیستم تحلیل داده و شناسایی خودکار فرصت‌های خرید زیر قیمت بازار در شهر جدید پردیس. دارای پادکست روزانه و نمودارهای تحلیلی طلا و مسکن.">
+    <meta name="keywords" content="مسکن پردیس, قیمت آپارتمان پردیس, تحلیل بازار پردیس, رادار مسکن, خرید آپارتمان پردیس, فرصت خرید پردیس, فاز 1 پردیس, فاز 8 پردیس">
+    <meta name="author" content="رادار مسکن پردیس">
+    <meta name="robots" content="index, follow">
+    <!-- 👇 اگر خواستید سایت را در گوگل سرچ کنسول ثبت کنید، کدی که گوگل به شما می‌دهد را به جای عبارت داخل content قرار دهید -->
+    <meta name="google-site-verification" content="کد_تایید_گوگل_را_اینجا_بگذارید" />
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B5FAA;
+            --dark: #0D2C54;
+            --gold: #C9952E;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.8; }
+        
+        /* بنر بالای سایت */
+        .hero { 
+            background: linear-gradient(rgba(13, 44, 84, 0.85), rgba(13, 44, 84, 0.9)), url('Ads.png') center/cover no-repeat; 
+            color: white; padding: 100px 20px; text-align: center; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.3rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+        .gold-line { width: 120px; height: 5px; background: var(--gold); margin: 20px auto; border-radius: 2px; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        /* بخش پادکست */
+        .podcast-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; margin-bottom: 50px; border-top: 5px solid var(--gold); }
+        .podcast-card h3 { color: var(--dark); margin-bottom: 20px; font-size: 1.5rem; }
+        audio { width: 100%; border-radius: 10px; }
+        
+        /* بخش نمودارها */
+        .charts-section { margin: 50px 0; text-align: center; }
+        .charts-section h2 { color: var(--dark); margin-bottom: 10px; font-size: 2rem; }
+        .charts-section p { color: #666; margin-bottom: 30px; }
+        .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; }
+        .chart-card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .chart-card img { width: 100%; height: auto; border-radius: 10px; display: block; }
+        .chart-caption { font-size: 0.9rem; color: #777; margin-top: 10px; font-weight: bold; }
+
+        /* بخش مقایسه */
+        .comparison-section { margin: 50px 0; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .comparison-section h2 { text-align: center; color: var(--dark); margin-bottom: 30px; font-size: 2rem; }
+        .comp-row { display: flex; align-items: center; margin-bottom: 20px; }
+        .comp-label { width: 250px; font-weight: bold; color: #555; padding-left: 20px; text-align: left; }
+        .comp-bars { flex-grow: 1; display: flex; flex-direction: column; gap: 8px; }
+        .bar-group { display: flex; align-items: center; gap: 10px; }
+        .bar-name { width: 80px; font-size: 0.9rem; font-weight: bold; }
+        .bar-track { flex-grow: 1; background: #eee; height: 14px; border-radius: 7px; overflow: hidden; }
+        .bar-fill { height: 100%; border-radius: 7px; }
+        .bar-score { width: 40px; font-size: 0.8rem; text-align: center; font-weight: bold; }
+
+        /* بخش دعوت به اقدام */
+        .cta-section { background: var(--dark); color: white; padding: 60px 20px; text-align: center; border-radius: 15px; margin: 50px 0; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 20px; color: var(--gold); }
+        .cta-section p { margin-bottom: 30px; font-size: 1.1rem; }
+        
+        .btn { display: inline-block; padding: 15px 40px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 50px; transition: 0.3s; margin: 10px; }
+        .btn-gold { background: var(--gold); color: var(--dark); }
+        .btn-gold:hover { background: #e0a73a; transform: scale(1.05); }
+        .btn-blue { background: var(--primary); color: white; }
+        .btn-blue:hover { background: #2a70b8; transform: scale(1.05); }
+
+        footer { text-align: center; padding: 30px; background: var(--dark); color: white; margin-top: 50px; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .comp-label { width: 100%; text-align: right; margin-bottom: 5px; }
+            .comp-row { flex-direction: column; align-items: stretch; margin-bottom: 25px; }
+            .chart-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- بنر اصلی سایت -->
+    <div class="hero">
+        <h1>🏠 رادار هوشمند مسکن پردیس</h1>
+        <div class="gold-line"></div>
+        <p>فراتر از یک کانال اطلاع‌رسانی؛ یک سیستم هوشمند تصمیم‌گیری سرمایه‌گذاری برای شکار فرصت‌های زیر قیمت بازار</p>
+    </div>
+
+    <div class="container">
+        
+        <!-- بخش پادکست صوتی -->
+        <div class="podcast-card">
+            <h3>🎙️ پادکست یک دقیقه‌ای تحلیل بازار پردیس</h3>
+            <p style="margin-bottom: 20px; color: #666;">خلاصه وضعیت بازار و بهترین فرصت‌های امروز را گوش دهید</p>
+            <audio id="daily-podcast" controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                مرورگر شما از پخش صوت پشتیبانی نمی‌کند.
+            </audio>
+        </div>
+
+        <!-- داشبورد نمودارهای زنده -->
+        <div class="charts-section">
+            <h2>📊 داشبورد زنده بازار پردیس</h2>
+            <p>نمودارهای تحلیلی امروز رادار مسکن پردیس (به صورت خودکار بروزرسانی می‌شود)</p>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <img src="charts/chart_distress.png" alt="شاخص استیصال">
+                    <div class="chart-caption">روند شاخص استیصال فروشندگان</div>
+                </div>
+                <div class="chart-card">
+                    <img src="charts/chart_gold.png" alt="معادل گرم طلا">
+                    <div class="chart-caption">ارزش هر متر مسکن (معادل گرم طلای ۱۸ عیار)</div>
+                </div>
+                <div class="chart-card">
+                    <img src="charts/chart_phase.png" alt="میانه قیمت فازها">
+                    <div class="chart-caption">میانه قیمت متری در فازهای شهر پردیس</div>
+                </div>
+                <div class="chart-card">
+                    <img src="charts/chart_discount.png" alt="شکاف قیمتی">
+                    <div class="chart-caption">روند شکاف قیمتی بازار (شاخص ارزانی)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- بخش مقایسه تکنولوژیک -->
+        <div class="comparison-section">
+            <h2>📊 سنجش تکنولوژیک رادار پردیس در برابر غول‌های جهانی</h2>
+            <div class="comp-row">
+                <div class="comp-label">سرعت و دقت غربالگری</div>
+                <div class="comp-bars">
+                    <div class="bar-group"><div class="bar-name" style="color:var(--gold)">رادار پردیس</div><div class="bar-track"><div class="bar-fill" style="width: 90%; background: var(--gold);"></div></div><div class="bar-score">۹/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Zillow</div><div class="bar-track"><div class="bar-fill" style="width: 80%; background: var(--primary);"></div></div><div class="bar-score">۸/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Bayut</div><div class="bar-track"><div class="bar-fill" style="width: 70%; background: #2E8B57;"></div></div><div class="bar-score">۷/۱۰</div></div>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-label">کشف انگیزه پنهان فروشنده</div>
+                <div class="comp-bars">
+                    <div class="bar-group"><div class="bar-name" style="color:var(--gold)">رادار پردیس</div><div class="bar-track"><div class="bar-fill" style="width: 90%; background: var(--gold);"></div></div><div class="bar-score">۹/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Zillow</div><div class="bar-track"><div class="bar-fill" style="width: 30%; background: var(--primary);"></div></div><div class="bar-score">۳/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Bayut</div><div class="bar-track"><div class="bar-fill" style="width: 40%; background: #2E8B57;"></div></div><div class="bar-score">۴/۱۰</div></div>
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-label">تطبیق با بازار تورمی ایران</div>
+                <div class="comp-bars">
+                    <div class="bar-group"><div class="bar-name" style="color:var(--gold)">رادار پردیس</div><div class="bar-track"><div class="bar-fill" style="width: 90%; background: var(--gold);"></div></div><div class="bar-score">۹/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Zillow</div><div class="bar-track"><div class="bar-fill" style="width: 40%; background: var(--primary);"></div></div><div class="bar-score">۴/۱۰</div></div>
+                    <div class="bar-group"><div class="bar-name">Bayut</div><div class="bar-track"><div class="bar-fill" style="width: 50%; background: #2E8B57;"></div></div><div class="bar-score">۵/۱۰</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- بخش دکمه‌های نهایی -->
+        <div class="cta-section">
+            <h2>🚨 رادار اختصاصی شما فعال شود!</h2>
+            <p>سیستم ما فرصت‌های درجه A (با شکاف قیمتی بالای ۳۰٪ و ریسک پایین) را مستقیماً برای شما ارسال می‌کند.<br>هیچ آگهی فیک یا تله پیش‌فروشی از چشم سیستم فرار نمی‌کند.</p>
+            
+            <a href="https://forms.gle/6PFc85nxCXHfnfYG9" target="_blank" class="btn btn-gold">📝 ثبت درخواست رادار VIP</a>
+            <a href="http://ble.ir/radar_maskan_pardis" target="_blank" class="btn btn-blue">📱 عضویت در کانال بله</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>تمامی حقوق محفوظ است | رادار مسکن پردیس © 1405</p>
+    </footer>
+
+    <!-- 🎯 اسکریپت جلوگیری از کش شدن فایل‌های روزانه (پادکست و نمودارها) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // ساخت یک رشته تصادفی بر اساس زمان برای جلوگیری از کش
+            const nocache = new Date().getTime();
+            
+            // آپدیت سورس پادکست
+            const audio = document.getElementById('daily-podcast');
+            if(audio) {
+                audio.src = 'podcast.mp3?v=' + nocache;
+            }
+
+            // آپدیت سورس عکس‌ها
+            document.querySelectorAll('.chart-card img').forEach(function(img) {
+                const baseSrc = img.src.split('?')[0];
+                img.src = baseSrc + '?v=' + nocache;
+            });
+        });
+    </script>
+
+</body>
+</html>
